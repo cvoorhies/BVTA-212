@@ -3,15 +3,14 @@ body {
     color: black;
     font-family: monospace,sans-serif;
     display: flex;
-    flex-flow: column;
+    flex-flow: column row wrap;
     justify-content: center;
-    align-items: center;
-    padding: 150px;
+    padding: 15%;
+    overflow: hidden;
 }
 div{
-    
-    width: 300px;
-    height: 200px;
+    min-width: 5%;
+    height: auto;
     background-color: rgb(200, 243, 223);
     margin: 10px;
     padding: 20px;
@@ -23,7 +22,6 @@ div{
 p{
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -49,7 +47,7 @@ button{
 #username{
     margin: 5px;
     padding: 1px;
-    min-width: 175px;
+    min-width: 15%;
     border: none;
     border-bottom: black thin solid;
 }
@@ -57,7 +55,8 @@ button{
 #password{
     margin: 5px;
     padding: 1px;
-    min-width: 175px;
+    min-width: 15%;
+    height: auto;
     border: none;
     border-bottom: black thin solid;
 }
