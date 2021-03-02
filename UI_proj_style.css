@@ -3,7 +3,7 @@ body {
     color: black;
     font-family: monospace,sans-serif;
     display: flex;
-    flex-flow: column row wrap;
+    flex-flow: row column wrap;
     justify-content: center;
     padding: 15%;
     overflow: hidden;
