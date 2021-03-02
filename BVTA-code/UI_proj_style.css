@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(250, 250, 250);
+    background-image: linear-gradient(rgba(30, 30, 241, 0.5), rgba(255, 255, 0, 0.5)),
+                  url("/BVTA-code/imgages/drink-84533_1920.jpg");
     color: black;
     font-family: monospace,sans-serif;
     display: flex;
