@@ -63,6 +63,14 @@ button{
     width: 85%;
     border: none;
     border-bottom: black thin solid;
+    background-color: transparent;
+}
+
+#username:focus{
+    background-color:white;
+}
+#password:focus{
+    background-color:white;
 }
 
 #password{
@@ -74,4 +82,5 @@ button{
     height: auto;
     border: none;
     border-bottom: black thin solid;
+    background-color: transparent;
 }
