@@ -32,6 +32,9 @@ div{
     box-shadow: 5px 25px 80px rgb(255, 236, 63);
     
 }
+h1{
+    text-align: center;
+}
 
 button:hover{
     display:flex;
