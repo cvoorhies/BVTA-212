@@ -29,7 +29,7 @@ div{
     background-color: rgb(200, 243, 223);
     border: black solid 2px;
     border-radius: 15%;
-    box-shadow: 5px 25px 80px rgb(255, 236, 63);
+    box-shadow: 10px 25px 35px 10px rgb(255, 236, 63);
     
 }
 h1{
