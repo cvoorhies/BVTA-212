@@ -9,7 +9,7 @@ html{
 }
 .container {
     background-image: url("/imgages/drink-84533_1920.jpg");
-    background-size: cover;
+    background-size: calc(1.1 * 100vw) calc(0.8 * 100vw);
     
 }
 
