@@ -8,8 +8,8 @@ html{
     align-items: center;
 }
 .container {
-    background-image: url("/imgages/drink-84533_1920.jpg");
-    background-size: calc(1.1 * 100vw) calc(0.8 * 100vw);
+    background-image: url("/Voorhies-Clyde-UI-Project-code/imgages/drink-84533_1920.jpg");
+    background-size: calc(1.1 * 90vw) calc(0.8 * 70vw);
     
 }
 
@@ -32,7 +32,7 @@ html{
     background-color: rgb(200, 243, 223);
     border: black solid 2px;
     border-radius: 15%;
-    box-shadow: 10px 25px 35px 10px rgb(65, 64, 62);  
+    box-shadow: -15px 10px 35px 10px rgb(65, 64, 62);  
 }
 h1{
     text-align: center;
