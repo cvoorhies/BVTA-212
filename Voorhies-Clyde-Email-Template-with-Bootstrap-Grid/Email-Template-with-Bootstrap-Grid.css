@@ -1,0 +1,9 @@
+.myContainer{
+    margin: 45px;
+    padding: 45px;
+    border: 2px solid black;
+}
+.myNav{
+    margin:5px;
+    border: 1px dotted blue;
+}
