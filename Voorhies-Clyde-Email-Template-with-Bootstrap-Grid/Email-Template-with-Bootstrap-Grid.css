@@ -1,9 +1,15 @@
 .myContainer{
-    margin: 45px;
-    padding: 45px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
     border: 2px solid black;
 }
 .myNav{
-    margin:5px;
+    margin:0px;
     border: 1px dotted blue;
+}
+
+.myEmailList{
+    margin:0px;
+    border: 1px dotted red;
 }

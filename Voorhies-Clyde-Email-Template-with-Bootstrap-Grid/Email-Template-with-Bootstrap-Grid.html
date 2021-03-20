@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template with Bootstrap Grid</title>
-    <link href="Email-Template-with-Bootstrap-Grid.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="Email-Template-with-Bootstrap-Grid.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <!--
     Create an Email Template using the attatched photo as a reference.
@@ -26,15 +28,20 @@
 
     Your project does not need to be perfect, but we want students to have a working draft of their project by the next class. (Week 6)
 -->
-<body class="myContainer container ">
+<body class="container-fluid ">
     <div class="row">
         <!--first column for the Nav links to various email folder options-->
         <div class="col-2 myNav">
             <div class="row row-lg">
-                <p>Logo Welcome, username!</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-file-image" viewBox="0 0 16 16" >
+                    <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12V2z"/> 
+                </svg> 
+                <p>User Name!</p>
             </div>
-            <div class="row row-lg">
-                <button type="button" class="btn btn-warning">COMPOSE</button>
+            
+            <div class="row row-lg" style="margin:20px">
+                <button type="button" class="btn btn-warning" ">COMPOSE</button>
             </div>
             <div class="row row-lg">
                 <nav class="nav flex-column">
@@ -49,50 +56,66 @@
         </div>
 
         <!--Second column for the list of emails in the in-box-->
-        <div class="col col-3 myCol">
+        <div class="col col-3 myEmailList">
             <div class="row row-lg">
-                <form class="bd-search position-relative me-auto">
-                    <input type="emailsearch" class="form-control ds-input" class="bi bi-search" placeholder="Search for email">
-                        <span class="input-group-text" id="addon-wrapping">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg>
-                        </span>
-                </form> 
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Email 1</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Actual search box -->
+                <div class="input-group">
+                    <div class="input-group clearfix">
+                        <i class="fa fa-search float-start" style="margin:10px" ></i>
+                        <input type="text float-end" class="form-control" placeholder="Search">
                     </div>
-                  </div>
-                  <div class="card" style="width: 18rem;">
+                </div>
+                
+                <div class="card" style="width: 22rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">LinkedIn</h5>
+                        <p>You have a new connection request.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 22rem;">
                     <div class="card-body">
                       <h5 class="card-title">Email 2</h5>
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                  </div>
-                  <div class="card" style="width: 18rem;">
+                </div>
+                <div class="card" style="width: 22rem;">
                     <div class="card-body">
                       <h5 class="card-title">Email 3</h5>
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                  </div>                  
-            </div>
-            <div class="row row-lg">
-                <p>Email cards</p>
+                </div>                  
             </div>
         <!--Third column for the read-view of the email selected-->    
         </div>
-        <div class="col">
+        <div class="col col-7">
             <div class="row row-lg">
-                <p>email content, should be 4 rows</p>
                 <div class="to-from">
                     <p class="to">To: usersemail@google.com</p>
                     <p class="from">From: re-ply@theofficesite.com</p>
                 </div>
+                <div>
+                    <h2>Email subject line</h2> 
+                </div>
+                
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sint commodi ullam, incidunt magni totam temporibus velit sed non quo assumenda tempore voluptates exercitationem dolore molestiae harum in natus dolores?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur pariatur voluptatibus nobis eligendi! Corrupti facilis deserunt quis laudantium alias obcaecati est magnam, eveniet odio.</p>
+                </div>
+                <!--reply area-->
+                <div class="form-floating input-group-append" style="border: 1px solid black; width: 750px; margin: 15px">
+                    <textarea class="form-control" placeholder="textarea" id="floatingTextarea1" style="height: 200px; border:none; ">
+                    </textarea>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                        <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                      </svg>
+                    <input class="btn btn-primary" type="Reply" value="Reply" style="float:right; margin:10px;">
+                </div>
+                  
                   
             </div>
         </div>
