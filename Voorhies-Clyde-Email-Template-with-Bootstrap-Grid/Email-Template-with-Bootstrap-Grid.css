@@ -1,15 +1,63 @@
-.myContainer{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    border: 2px solid black;
-}
+
+/*column 1 - Navbar with Email inboxes*/
 .myNav{
-    margin:0px;
-    border: 1px dotted blue;
+    padding:10px;
+    background-color:rgb(78, 40, 22);
+    color: black;
 }
 
+.myUser{
+    margin:1px;
+    padding: 2px;
+    
+}
+
+.userName{
+    padding: 10px;
+    width:40px;
+    background-color: antiquewhite; 
+    border-radius: 50%;
+}
+
+.boxList{
+    color:white;
+}
+
+
+/*column 2 - Email list */
 .myEmailList{
     margin:0px;
-    border: 1px dotted red;
+    padding:20px;
+    background-color:tan;
 }
+
+.mySearch{
+    margin:3px;
+    background-color:white;
+    border: none;
+    
+}
+
+.myCard{
+    align-items:center;
+    width: 105px;
+    margin: 25px;
+    margin-top:25px;
+    border: none;
+}
+
+.selCard{
+    margin:10px;
+    margin-right:20px;
+    box-shadow: 10px 10px 5px #686767;
+}
+
+/*column 3 - email readpane */
+.readingPane{
+    background-color:rgb(233, 219, 173);
+}
+
+.textArea{
+    background-color:rgb(233, 219, 173);
+}
+
