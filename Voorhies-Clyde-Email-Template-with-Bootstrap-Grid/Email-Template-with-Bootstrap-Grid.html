@@ -7,8 +7,8 @@
         <title>Email Template with Bootstrap Grid</title>
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link href="Email-Template-with-Bootstrap-Grid.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="Email-Template-with-Bootstrap-Grid.css" rel="stylesheet">
 
     </head>
     <!--
@@ -31,7 +31,7 @@
     <body class="container-fluid ">
         <div class="row">
             <!--first column for the Nav links to various email folder options-->
-            <div class="col col-2 myNav">
+            <div class="col col-sm-2 myNav">
                 <div class="row row-sm myUser">
                     <div class="userName" >
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-image" viewBox="2 0 16 16">
@@ -58,7 +58,7 @@
             </div>
             
             <!--Second column for the list of emails in the in-box-->
-            <div class="col col-3 myEmailList">
+            <div class="col col-md-3 myEmailList">
                 <div class="row row-sm">
                     <!-- Actual search box -->
                     <div class="input-group mySearch">
@@ -89,7 +89,7 @@
                 </div> 
             </div>
             <!--Third column for the read-view of the email selected-->   
-            <div class="col col-7 readingPane">
+            <div class="col col-md-7 readingPane">
                 <div class="row row-sm">
                     <div class="to-from">
                         <p class="to" style="margin:0px">To: usersemail@google.com</p>
