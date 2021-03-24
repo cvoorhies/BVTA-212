@@ -14,13 +14,10 @@ Product landing page should utilize CSS flexbox at least once.
 	padding: 0px;
 	margin: auto;
 	background-color: #ccffcc;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-    text-align: center;
 }
+
 #title{
-	font-family: font-family: 'Rock Salt', cursive;
+	font-family: 'Rock Salt', cursive;
 	text-align: center;
 }
 #header{
