@@ -9,76 +9,51 @@ Product landing page should utilize CSS flexbox at least once.
 */
 /** global element styling **/
 
+/* Header of the page */
+.header{
+  background-color: yellow;
+}
 
+.navbar{
+  background-color: white;
+}
+
+.nav {
+  font-weight: 400;
+}
+.nav > ul {
+  width: 10%;
+}
+
+.logo {
+	width: 15%;
+}
+.logo > img{
+  width: 100%;
+  height: auto;
+}
+
+.header-title{
+	font-family: 'Rock Salt', cursive;
+	text-align: center;
+}
+
+
+/* body */
 .container {
 	padding: 0px;
 	margin: auto;
 	background-color: #ccffcc;
 }
 
-#title{
+.banner > h2 {
 	font-family: 'Rock Salt', cursive;
-	text-align: center;
-}
-#header{
-  position: fixed;
-  min-height: 75px;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: yellow;
+	margin: 0px;
+	word-wrap: wrap;
+	justify-content: center;
 }
 
-#navbar{
-  background-color: blue;
-  position: fixed;
-  overflow: hidden;  
-}
-
-#logo {
-	width: 75vw;
-}
-#logo > img{
-  width: 500%;
-  height: 100%;
-  max-width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 20px;
-}
-
-nav {
-  font-weight: 400;
-}
-nav > ul {
-  width: 35vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.main{
-	height: 75%;
-	width: 100%;
-	margin: 5px;
-	display: flex;
-    justify-content: Space-around;
-    text-align: center;
-	font-family: font-family: 'Rock Salt', cursive;
-}
-
-#banner > h2 {
-	font-family: font-family: 'Rock Salt', cursive;
-	margin-top: 150px;
-	margin-bottom: 0px;
-	word-wrap: break-word;
-	align-self: center;
-}
-
-#banner > input[type="email"] {
+.banner > input[type="email"] {
   width: 10%;
   height: 40px;
   margin: 15px 0;
@@ -87,7 +62,7 @@ nav > ul {
   align-self: center;
 }
 
-#banner >input[type="submit"] {
+.banner >input[type="submit"] {
   max-width: 150px;
   width: 100%;
   height: 40px;
@@ -96,7 +71,8 @@ nav > ul {
   background-color: #f1c40f;
   align-self: center;
 }
-#form{
+
+.form{
   padding: 0 20px;
   height: 40px;
   font-size: 1em;
@@ -104,73 +80,43 @@ nav > ul {
   text-transform: uppercase;
   border-radius: 2px;
   background: transparent;
-  cursor: pointer;
-  align-self: center;
 }
 
-#banner input[type="submit"]:hover {
-  background-color: purple;
-  transition: background-color 1s;
+
+.dogtreat{
+	width: 300px;
+	height: auto;
 }
-#dogtreat{
-	width: 75vw;
-	height: 100%;
-	max-width: 100%;
-}
-.body{
-  display: grid;
-  grid-template-column: repeat(5, minmax(15%, 50%));
-  grid-template-rows: repeat(4, minmax(15%, 25%));
-  grid-gap: 1%;
-  
-}
+
 #features{
 	background-color: #99ff66;
-	grid-column-start: 1;
-	grid-row-start: 1;
-
 }
 #treatimg{
 	background-color: #99ff66;
-	grid-column-start: 2;
-	grid-row-start: 1;
 }
 #how-it-works{
 	background-color: #ff00ff;
-	grid-column-start: 2;
-	grid-row-start: 2;
 }
 #spaceimg{
 	background-color: #99ff66;
-	grid-column-start: 1;
-	grid-row-start: 2;
 }
 #product{
 	background-color: #993399;
-	grid-column-start: 3;
-	grid-row-start: 3;
 }
 #pricing{
 	background-color: #ffff99;
-	grid-column-start: 1;
-	grid-row-start: 3;
 }
 .footer {
   background-color: orange;
   margin: 1%;
   padding: 2%;
-  grid-column-start: 1;
-  grid-row-start: 4;
 }
 #weblink{
-	max-width: 560px;
 	width: 100%;
 }
 
 
 /*
-
-
 @media (max-width: 600px) {
   header {
     flex-wrap: wrap;
