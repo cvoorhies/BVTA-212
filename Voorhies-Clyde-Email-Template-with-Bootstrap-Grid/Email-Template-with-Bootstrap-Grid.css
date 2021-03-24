@@ -1,4 +1,8 @@
 
+body{
+    width:100%;
+    height:auto;
+}
 /*column 1 - Navbar with Email inboxes*/
 .myNav{
     padding:10px;
