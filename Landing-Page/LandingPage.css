@@ -46,40 +46,32 @@ Product landing page should utilize CSS flexbox at least once.
 	background-color: #ccffcc;
 }
 
-.banner > h2 {
-	font-family: 'Rock Salt', cursive;
-	margin: 0px;
-	word-wrap: wrap;
-	justify-content: center;
+.banner{
+  width: 100vw;
+  height: 200px;
 }
 
-.banner > input[type="email"] {
-  width: 10%;
+.banner > h2 {
+	font-family: 'Rock Salt', cursive;
+}
+
+.form > input[type="email"] {
+  width: 175px;
   height: 40px;
-  margin: 15px 0;
-  border: 0;
   background-color: #f1c40f;
-  align-self: center;
 }
 
 .banner >input[type="submit"] {
-  max-width: 150px;
   width: 100%;
   height: 40px;
-  margin: 15px 0;
-  border: 0;
   background-color: #f1c40f;
-  align-self: center;
 }
 
 .form{
-  padding: 0 20px;
   height: 40px;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 900;
-  text-transform: uppercase;
   border-radius: 2px;
-  background: transparent;
 }
 
 
