@@ -1,0 +1,15 @@
+// Setup
+var myArray = [];
+let i = 5
+let index = 0;
+while(i >= 0){
+  myArray.push(i)
+  i--
+  /*
+  myArray[index] = i;
+  index++
+  i--
+  */
+}
+// Only change code below this line
+console.log(myArray)

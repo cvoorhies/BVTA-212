@@ -1,0 +1,61 @@
+//test arr to arr1, if not in arr, add arr1 index to arr.
+  for(let i = 0; i < arr1.length; i++){
+      if (arr.indexOf(arr1[i]) === -1) {
+      arr.push(arr1[i]);
+      }};
+//test arr to arr1, if not in arr, add arr1 index to arr.
+  for(let i = 0; i < arr2.length; i++){
+      if (arr.indexOf(arr2[i]) === -1) {
+      arr.push(arr2[i]);
+      };
+  }
+
+
+let inputArr = arr.map( arrList =>{ return{arrList}});
+
+
+let arr0 = []
+  let arr1 = []
+  //console.log(arr0)
+  for(let i = 0; i < arr.length; i++){
+  arr0[i] = [...arr[i]]
+  }
+  console.log(arr0)
+  var newArr = [];
+  let testlen = 0;
+  // find longest array length for loop
+  for(let i=0; i< testlen; i++){
+      if(arr0[i].length > arr0[i+1].length){
+        // if arr1 has a longer length
+      testlen = arr0[i].length;
+      }
+      console.log(arr0[0].indexOf(arr0[1][i]) === -1)
+      if (arr0.indexOf(arr0[i]) === -1) {
+      newArr.push(arr0[i][i]);
+      }
+      else{};}
+if(arr0.length > arr0.length){// if arr1 has a longer length
+    testlen = arr0.length; }
+  for(let j=0; j< testlen; j++){
+      console.log(arr1.indexOf(arr0[j]))
+      if (arr0.indexOf(arr0[j]) === -1) {
+      newArr.push(arr0[j]);
+      } else {
+    testlen = arr0.length;
+    // if arr2 has a longer length
+  for(let i=0; i< testlen; i++){
+      if (arr0.indexOf(arr0[i]) === -1) {
+      newArr.push(arr0[i]);}
+      }
+      //place second loop here
+    testlen = arr0.length;
+    console.log(testlen);
+    for(let j=0; j< testlen; j++){
+      //console.log(arr2.indexOf(arr2[j]))
+      if (arr0.indexOf(arr0[j]) === -1) {
+      newArr.push(arr0[j]);}
+    } 
+  }
+  //console.log(testlen)// test loop condition
+// loop to compare one array to the other
+  }

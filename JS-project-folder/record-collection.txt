@@ -1,0 +1,100 @@
+// Setup
+var collection = {
+  2548: {
+    album: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: [
+      "Let It Rock",
+      "You Give Love a Bad Name"
+    ]
+  },
+  2468: {
+    album: "1999",
+    artist: "Prince",
+    tracks: [
+      "1999",
+      "Little Red Corvette"
+    ]
+  },
+  1245: {
+    artist: "Robert Palmer",
+    tracks: [ ]
+  },
+  5439: {
+    album: "ABBA Gold"
+  }
+};
+
+// Only change code below this line
+function updateRecords(id, prop, value) {
+
+// "artist" tasks
+console.log("artist")
+if (prop === 'artist'){
+  collection[id][prop] = value;
+
+ if(value === ""){
+    delete collection[id][prop];
+  }
+    //console.log(collection[id])
+    //console.log(collection[id][prop])
+}
+
+console.log("tracks")
+
+// 'tracks'
+if (prop === 'tracks'){
+    if(collection[id][prop] === undefined)
+        {collection[id][prop] = [] 
+        collection[id][prop].push(value)}
+
+      else if (collection[id][prop] === prop){
+          collection[id][prop].push(value)
+        }
+          else if(value == [])
+             {delete collection[id][prop];}
+                else{
+                   collection[id][prop].push(value)
+                    }
+//console.log(collection[id])
+}
+console.log("album")
+
+if (prop === "album"){
+collection[id][prop] = value
+console.log(collection[id])
+}
+
+console.log(collection[id])
+  return collection;
+};
+
+//updateRecords(5439, "artist", "ABBA"); //artist should be "ABBA"
+//updateRecords(5439, "tracks", "Take a Chance on Me")//should have "Take a Chance on Me" as the last element
+updateRecords(2548, "artist", "") //artist should not be set
+//updateRecords(1245, "tracks", "Addicted to Love") //tracks should have "Addicted to Love" as the last element.
+//updateRecords(2468, "tracks", "Free") //tracks should have "1999" as the first element.
+//updateRecords(2548, "tracks", "") //tracks should not be set
+//updateRecords(1245, "album", "Riptide") //album should be "Riptide"
+
+
+
+/*
+if(!collection[id].hasOwnProperty(prop)){
+
+        console.log(collection[id][prop])
+  
+      if(prop === 'tracks' && collection[id][prop] == undefined){
+          collection[id][prop] = []
+
+        } else {collection[id][prop] = value}
+  collection[id][prop] = [value]
+
+
+  //console.log(collection[id][prop])
+//console.log("tracks",collection[id])
+//anything else not tracks or artists
+
+console.log(collection[id].hasOwnProperty(prop))
+console.log(collection[id][prop] === undefined)
+*/
