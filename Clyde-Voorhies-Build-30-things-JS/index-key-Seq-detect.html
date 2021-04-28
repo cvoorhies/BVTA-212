@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Key Detection</title>
-  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
-</head>
-<body>
-<script>
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Key Detection</title>
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+  </head>
+  <body>
+    <script>
+      const keysPressed = [];
+      const secretCode = "SMIB";
+      
+      window.addEventListener('keyup', (e) => {
+        console.log(e.key);
+        keysPressed.push(e.key);
+        keysPressed.splice(-secretCode.length - 1, keysPressed.length - secretCode.length);
+        
+        if(keysPressed.join('').includes(secretCode)){
+             console.log('IT\'S ALIVE!!!!');
+          };
+        console.log(keysPressed);
+      });
+      
+    </script>
+  </body>
 </html>
